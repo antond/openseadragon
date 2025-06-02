@@ -358,6 +358,7 @@
                     }
 
                     let maxTextures = this._gl.getParameter(this._gl.MAX_TEXTURE_IMAGE_UNITS);
+                    console.log('maxTextures: ', maxTextures);
                     if(maxTextures <= 0){
                         // This can apparently happen on some systems if too many WebGL contexts have been created
                         // in which case maxTextures can be null, leading to out of bounds errors with the array.
